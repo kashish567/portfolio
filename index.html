@@ -1,213 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/1d2203c5ed.js" crossorigin="anonymous"></script>
-</head>
-<body>
- <div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1d2203c5ed.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/LOGO.png" class="LOGO">
-            <ul id="sidemenu">
-                
-                    <li className="link"><a href="#About">About Me</a></li>
-                    <li className="link"><a href="#portfolio">Portfolio</a></li>
-                    <li className="link"><a href="#contact">Contact</a></li>
-
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <img src="images/LOGO.png" class="logo" />
+          <ul id="sidemenu">
+            <li class="link"><a href="#About">About Me</a></li>
+            <li class="link"><a href="#portfolio">Portfolio</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Full Stack Developer</p>
-            <h1>Hi,I'm <span>Kashish</span> Bhanushali</h1>
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Kashish</span> Bhanushali</h1>
         </div>
+      </div>
     </div>
- </div>   
- <!------------about------------------>
-        <div id="About">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/WhatsApp_Image_2024-08-02_at_2.51.10_PM-removebg-preview.png">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="subtitle">About Me</h1>
-                        <p>A passionate Full Stack Developer with a strong interest in MERN stack Developement.<br></p>
-                        <p>Like exploring new tachnologies and providing user-friendly solutions.<br></p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Developer</span><br>Web app Developement</li>
-                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Current</span><br>Full Stack Developer at Qconnekt</li>
-                                <li><span>June 2023</span><br>Web Developer Intern</li>
-
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Current</span><br>Pursuing Bachelors of Engineering</li>
-                                <li><span>2020</span><br>Hsc</li>
-                                <li><span>2018</span><br>Ssc</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                </div>
+    <!------------about------------------>
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/WhatsApp_Image_2024-08-02_at_2.51.10_PM-removebg-preview.png"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              A passionate Full Stack Developer with a strong interest in MERN
+              stack Development.<br />
+            </p>
+            <p>
+              Like exploring new technologies and providing user-friendly
+              solutions.<br />
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Web app Development</li>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Current</span><br />Full Stack Developer at Qconnekt
+                </li>
+                <li><span>June 2023</span><br />Web Developer Intern</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Current</span><br />Pursuing Bachelors of Engineering
+                </li>
+                <li><span>2020</span><br />HSC</li>
+                <li><span>2018</span><br />SSC</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
- <!-- ===================services========================== -->
- <div class="services">
-    <div class="container">
+    <!-- ===================services========================== -->
+    <div class="services">
+      <div class="container">
         <h1 class="subtitle">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                
-            </div>
-
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-               
-            </div>
-
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-              
-            </div>
-
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+          </div>
         </div>
+      </div>
     </div>
- </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!--            portofio                -->
- <div id="portfolio">
-    <div class="container">
+    <!--            portfolio                -->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="subtitle">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Chat App</h3>
-                    <p>Chat app for real time chat using socket.io.</p>
-                    <a href="chat-app-gamma-rosy-11.vercel.app"><i class="fa-solid fa-link"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Chat App</h3>
+              <p>Chat app for real time chat using socket.io.</p>
+              <a href="chat-app-gamma-rosy-11.vercel.app"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>PulseCare</h3>
-                    <p>An app made for easy appointment scheduling and many other features.</p>
-                    <a href="https://github.com/kashish567/pulsecare"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>PulseCare</h3>
+              <p>
+                An app made for easy appointment scheduling and many other
+                features.
+              </p>
+              <a href="https://github.com/kashish567/pulsecare"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Todo App</h3>
-                    <p>The app helps you maintain a todo list for your activities.</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>        
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Blog App</h3>
+              <p>App made using Nextjs.</p>
+              <a href="nextjs-blog-app-snowy-six.vercel.app"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn">See More</a>
+      </div>
     </div>
- </div>
 
-
- <!-- ==================contact========================= -->
-<div id="contact">
-    <div class="container">
+    <!-- ==================contact========================= -->
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> kashishbhanushali7@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 9561650242</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/kashish567"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="images/resume2.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              kashishworks7@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 9561650242</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/kashish567"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" email="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
+            <a href="images/resume2.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
+      </div>
+      <div class="copyright">
         <p>Copyright Kashish Bhanushali <i class="fa-solid fa-heart"></i></p>
+      </div>
     </div>
-</div>
 
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-
- <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("acive-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
- </script>
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-    
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-</script>
-
-</body>
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>

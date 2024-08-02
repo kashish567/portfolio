@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #080808;
     color: #fff;
 }
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-image: url();
@@ -18,36 +18,38 @@ body{
     background-position: center;
 }
 
-.container{
+.container {
     padding: 10px 10%;
-
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     width: 140px;
 }
 
-nav ul li{
-    display: inline-block;
+nav ul {
+    display: flex;
     list-style: none;
+}
+
+nav ul li {
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -58,62 +60,63 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     margin-top: 20%;
     font-size: 30px;
+    text-align: center;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: #9b793a;
-
 }
 
 /* --------about----------- */
-#about{
+#about {
     padding: 80px 0;
     color: #646161;
-
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
-    border-radius: 1;
+    border-radius: 1px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 60%;
 }
 
-.subtitle{
+.subtitle {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
+    flex-wrap: wrap;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -121,7 +124,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -132,95 +135,97 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #9b793a;
     font-size: 20px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
-#services{
+#services {
     padding: 30px 0;
 }
 
-.services-list{
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
+.services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2{
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a{
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
-    display: inline-block;    
+    display: inline-block;
 }
 
-.services-list div:hover{
+.services-list div:hover {
     background: #9b793a;
     transform: translateY(-10px);
 }
 
-#portfolio{
+#portfolio {
     padding: 50px 0;
 }
 
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+
+.work img {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: tranform 05s;
+    transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6),#9b793a);
@@ -238,12 +243,13 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #9b793a;
     text-decoration: none;
@@ -256,16 +262,15 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
-
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -277,35 +282,33 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #9b793a;
 }
 
-
-
-.contact-left{
+.contact-left {
     flex-basis: 35%;
-
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p i{
+.contact-left p i {
     color: #9b793a;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 50px;
 }
 
-.social-icons a{
+social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -313,21 +316,22 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+social-icons a:hover {
     color: #9b793a;
     transform: translateY(-5px);
 }
 
-.btn.btn2{
+.btn.btn2 {
     display: inline-block;
     background: #9b793a;
 }
 
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
 
-form input, form textarea{
+form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -337,17 +341,16 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
-
 }
 
-form .btn2{
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -356,27 +359,61 @@ form .btn2{
     margin-top: 20px;
 }
 
-.copyright i{
+copyright i {
     color: #9b793a;
 }
 
-nav.fas{
+nav .fa-bars {
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    .header-text{
-        margin-top: 100%;
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .header-text {
+        margin-top: 15%;
+        font-size: 24px;
+    }
+    .header-text h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text {
+        margin-top: 20%;
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .subtitle {
+        font-size: 50px;
+    }
+    .services-list, .work-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 30%;
         font-size: 16px;
     }
-    .header-text h1{
+    .header-text h1 {
         font-size: 30px;
     }
-    nav.fas{
-        display: none;
+    nav .fa-bars {
+        display: block;
         font-size: 25px;
     }
-    nav ul{
+    nav ul {
         background: #9b793a;
         position: fixed;
         top: 0;
@@ -386,22 +423,23 @@ nav.fas{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        flex-direction: column;
+        align-items: center;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .fa-times {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .subtitle{
+    .subtitle {
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
+    .about-col-1, .about-col-2 {
         flex-basis: 100%;
-        
     }
 }
